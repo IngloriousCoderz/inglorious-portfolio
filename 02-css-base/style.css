@@ -1,0 +1,12 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+h1 {
+  color: hsl(81, 56%, 53%);
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+body {
+  background: palegreen;
+}
