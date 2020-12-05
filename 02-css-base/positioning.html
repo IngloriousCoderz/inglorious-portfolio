@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .header {
+            height: 50px;
+            background-color: lightgreen;
+        }
+
+        .main {
+            background-color: cornflowerblue;
+        }
+
+        .picture {
+            width: 80px;
+            height: 80px;
+            background: pink;
+            float: right;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        p {
+            margin-bottom: 5px;
+        }
+
+        p.special {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        #genus_examples > li {
+            border: 1px solid red
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="main">
+        <div class="picture"></div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p class="clearfix">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p><p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+
+        <ul id="genus_examples">
+            <li>Cats
+                <ul>
+                    <li>Panthera</li>
+                    <li>Felis</li>
+                    <li>Neofelis</li>
+                </ul>
+            </li>
+            <li>Apes
+                <ul>
+                    <li>Pongo</li>
+                    <li>Pan</li>
+                    <li>Homo</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

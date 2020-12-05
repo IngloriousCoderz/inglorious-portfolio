@@ -1,5 +1,29 @@
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 
+#root {
+  background: rgb(255, 248, 0);
+  background: radial-gradient(
+    circle,
+    rgba(255, 248, 0, 1) 0%,
+    rgba(132, 58, 178, 1) 50%,
+    rgba(9, 102, 121, 1) 100%
+  );
+}
+
+a {
+  color: cornflowerblue;
+}
+
+a:hover {
+  color: blue;
+}
+
+/* html,
+body,
+#root {
+  margin: 0;
+}
+
 h1 {
   color: hsl(81, 56%, 53%);
   font-family: Arial;
@@ -10,3 +34,36 @@ h1 {
 body {
   background: palegreen;
 }
+
+p {
+  font-family: Ubuntu, Verdana, Arial;
+  font-size: 32px;
+  font-weight: normal;
+  color: black;
+}
+
+#special-paragraph {
+  color: purple;
+}
+
+.nomargin {
+  margin: 0;
+}
+
+strong {
+  font-weight: normal;
+  font-family: monospace;
+}
+
+table {
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid cornflowerblue;
+}
+
+td {
+  border: 1px solid greenyellow;
+} */
