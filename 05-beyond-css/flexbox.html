@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .child {
+            flex-grow: 1;
+        }
+
+        #child1 {
+            background: lightcoral;
+            height: 100px;
+        }
+
+        #child2 {
+            background: lightgreen;
+            height: 50px;
+            flex-grow: 4;
+        }
+
+        #child3 {
+            background: lightskyblue;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child" id="child1">Child 1</div>
+        <div class="child" id="child2">Child 2</div>
+        <div class="child" id="child3">Child 3</div>
+    </div>
+</body>
+</html>
