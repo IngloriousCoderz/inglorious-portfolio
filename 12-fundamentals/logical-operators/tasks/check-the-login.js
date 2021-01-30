@@ -30,3 +30,56 @@ if (username === 'Admin') {
 } else {
     alert("I don't know you");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* bobby1 */
+let username = prompt("What is your username");
+
+let password = !username
+    ? alert("Canceled")
+    : username === "admin"
+        ? prompt("Password")
+        : alert("I don't know you");
+
+!password
+    ? alert("Canceled")
+    : password === 'TheMaster'
+        ? alert("Welcome")
+        : alert("Wrong password");
