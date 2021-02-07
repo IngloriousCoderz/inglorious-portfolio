@@ -179,5 +179,3 @@ else{
 temporary = 0;
 }
 }
-
-

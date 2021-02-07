@@ -1,38 +1,36 @@
-// /**
-//  * Rectangle: Build an ASCII rectangle, given the number of rows and columns:
-//  *
-//  * *****
-//  * *****
-//  * *****
-//  *
-//  * HINT: The problem can be split into multiple sub-problems:
-//  * 1. how to build one row?
-//  * 2. how to repeat the process?
-//  */
+/**
+ * Rectangle: Build an ASCII rectangle, given the number of rows and columns:
+ *
+ * *****
+ * *****
+ * *****
+ *
+ * HINT: The problem can be split into multiple sub-problems:
+ * 1. how to build one row?
+ * 2. how to repeat the process?
+ */
 
-// // collect user input
+// collect user input
 
-// let rows = +prompt('Rows');
-// let columns = +prompt('Columns');
+let rows = +prompt('Rows');
+let columns = +prompt('Columns');
 
-// // perform calculations
+// perform calculations
 
-// let rectangle = '';
-// for (let i = 0; i < rows; i++) {
+let rectangle = '';
+for (let i = 0; i < rows; i++) {
     
-//     let row = '';
-//     for (let j = 0; j < columns; j++) {
-//         row += '*';
-//     }
+    let row = '';
+    for (let j = 0; j < columns; j++) {
+        row += '*';
+    }
 
-//     rectangle += row + '\n';
-// }
+    rectangle += row + '\n';
+}
 
-// // output the result
+// output the result
 
-// console.log(rectangle);
-
-
+console.log(rectangle);
 
 
 
@@ -60,81 +58,83 @@
 
 
 
-// /*
-//  * Empty rectangle: Build an ASCII rectangle, but this time asterisks only delimit the borders and the rest is spaces.
-//  *
-//  * ******
-//  * *    *
-//  * *    *
-//  * ******
-//  *
-//  * HINT: split the problem into multiple sub-problems:
-//  *
-//  * 1. how to build a 'full' row
-//  * 2. how to build an 'empty' row
-//  * 3. how to build the whole rectangle, knowing that:
-//  *    1. the first and last rows are always 'full'
-//  *    2. all other rows in between are always 'empty'
-//  */
-
-// let rows = 4;
-// let columns = 6;
-
-// /* begin TOP ROW */
-// let topRow = '';
-// for (let j = 0; j < columns; j++) {
-//     topRow += '*';
-// }
-// topRow += '\n';
-// /* end TOP ROW */
-
-// /* begin EMPTY ROWS */
-// let emptyRows = '';
-// for (let i = 1; i < rows - 1; i++) {
-
-//     /* begin EMPTY ROW */
-//     let emptyRow = '';
-//     for (let j = 1; j < columns - 1; j++) {
-//         emptyRow += ' ';
-//     }
-//     emptyRow = '*' + emptyRow + '*';
-//     /* end EMPTY ROW */
-
-//     emptyRows += emptyRow + '\n';
-// }
-// /* end EMPTY ROWS */
-
-// /* begin BOTTOM ROW */
-// let bottomRow = '';
-// for (let j = 0; j < columns; j++) {
-//     bottomRow += '*';
-// }
-// bottomRow += '\n';
-// /* end BOTTOM ROW */
-
-// let emptyRectangle = topRow + emptyRows + bottomRow;
-// console.log(emptyRectangle);
 
 
-// // input
-// let rows = prompt("How many rows?");
-// let columns = prompt('How many columns?');
+/**
+ * Empty rectangle: Build an ASCII rectangle, but this time asterisks only delimit the borders and the rest is spaces.
+ *
+ * ******
+ * *    *
+ * *    *
+ * ******
+ *
+ * HINT: split the problem into multiple sub-problems:
+ *
+ * 1. how to build a 'full' row
+ * 2. how to build an 'empty' row
+ * 3. how to build the whole rectangle, knowing that:
+ *    1. the first and last rows are always 'full'
+ *    2. all other rows in between are always 'empty'
+ */
 
-// // calculations
-// let rectangle = '';
-// for (let i = 1; i <= rows; i++) {
-//     for (let j = 1; j <= columns; j++) { 
-//         if (i == 1 || i == rows || j == 1 || j == columns) {
-//             rectangle += "*";
-//         } else {
-//             rectangle += '\u2000';
-//         }
-//     }
-//     rectangle += "<br>";
-// }
+let rows = 4;
+let columns = 6;
 
-// // output
-// document.write(rectangle);
+/* begin TOP ROW */
+let topRow = '';
+for (let j = 0; j < columns; j++) {
+    topRow += '*';
+}
+topRow += '\n';
+/* end TOP ROW */
+
+/* begin EMPTY ROWS */
+let emptyRows = '';
+for (let i = 1; i < rows - 1; i++) {
+
+    /* begin EMPTY ROW */
+    let emptyRow = '';
+    for (let j = 1; j < columns - 1; j++) {
+        emptyRow += ' ';
+    }
+    emptyRow = '*' + emptyRow + '*';
+    /* end EMPTY ROW */
+
+    emptyRows += emptyRow + '\n';
+}
+/* end EMPTY ROWS */
+
+/* begin BOTTOM ROW */
+let bottomRow = '';
+for (let j = 0; j < columns; j++) {
+    bottomRow += '*';
+}
+bottomRow += '\n';
+/* end BOTTOM ROW */
+
+let emptyRectangle = topRow + emptyRows + bottomRow;
+console.log(emptyRectangle);
+
+
+// input
+let rows = prompt("How many rows?");
+let columns = prompt('How many columns?');
+
+// calculations
+let rectangle = '';
+for (let i = 1; i <= rows; i++) {
+    for (let j = 1; j <= columns; j++) { 
+        if (i == 1 || i == rows || j == 1 || j == columns) {
+            rectangle += "*";
+        } else {
+            rectangle += '\u2000';
+        }
+    }
+    rectangle += "<br>";
+}
+
+// output
+document.write(rectangle);
 
 
 
@@ -172,19 +172,19 @@
  * 1234 row 4 = 4
  */
 
-// let rows = 4;
+let rows = 4;
 
-// let rightTriangle = '';
-// for (let i = 0; i < rows - 1; i++) {
-//     let row = '';
-//     let columns = i + 1;
-//     for (let j = 0; j < columns; j++) {
-//         row += '*';
-//     }
+let rightTriangle = '';
+for (let i = 0; i < rows - 1; i++) {
+    let row = '';
+    let columns = i + 1;
+    for (let j = 0; j < columns; j++) {
+        row += '*';
+    }
 
-//     rightTriangle += row + '\n';
-// }
-// console.log(rightTriangle);
+    rightTriangle += row + '\n';
+}
+console.log(rightTriangle);
 
 
 

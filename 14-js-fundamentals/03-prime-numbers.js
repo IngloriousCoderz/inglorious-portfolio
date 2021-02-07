@@ -28,11 +28,19 @@ for (let number = 2; number < maxNum; number++) {
     }
 }
 
-// 2 4 8
-// 16 32 64 -> powers of 2 ? NO
-// 12 18 24
-// 30 34 36 -> even numbers ? NO
-// 30 33 34 -> all numbers ? NO
-// -6 -4 -2 -> positive numbers ? NO
-// 6 2 4 -> randomly placed number ? NO
-// 3 2 1 -> all ascending numbers? YES, well done Tiago!
+/* Bobby's solution uses a similar approach, counting the divisors of a number. */
+// sieve of something
+let maxNum = +prompt("Number?");
+for (let number = 2; number <= maxNum; number++) {
+    let divisors = 0;
+    for (let previous = 2; previous < number; previous++) {
+        if (number % previous === 0) {
+            divisors++;
+        }
+    }
+
+    if(!divisors) {
+        document.write(input)
+        document.write("<br>")
+    }
+}

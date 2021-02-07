@@ -221,6 +221,7 @@ alert('The average was calculated and is: ' + avrGrade3.toFixed(1));
 /* bobby1 */
 
 // get grades from the user until the grade is falsy
+//                     ===
 // get grades from the user while the grade is truthy
 
 let sum = 0;
