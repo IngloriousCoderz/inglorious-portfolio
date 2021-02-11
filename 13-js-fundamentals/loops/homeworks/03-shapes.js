@@ -12,6 +12,8 @@
 
 // collect user input
 
+// O(n^2)
+
 let rows = +prompt('Rows');
 let columns = +prompt('Columns');
 
@@ -243,14 +245,14 @@ let isoTriangle = '';
 for (let i = 0; i < rows; i++) {
     let row = '';
 
-    let lastRow = rows - 1;
+    let lastRow = rows - 1; // row indexes start from 0, so last index is rows - 1
     let spaces = lastRow - i;
     for (let j = 0; j < spaces; j++) {
         row += ' ';
     }
 
-    let columns = i * 2 + 1;
-    for (let j = 0; j < columns; j++) {
+    let asterisks = i * 2 + 1;
+    for (let j = 0; j < asterisks; j++) {
         row += '*';
     }
     isoTriangle += row + '\n';
@@ -307,3 +309,23 @@ console.log(isoTriangle);
  * 
  * HINT: the proportionality is similar to the previous exercise, but reversed.
  */
+
+let rows = 4;
+
+let isoTriangle = '';
+for (let i = 0; i < rows; i++) {
+    let row = '';
+
+    let lastRow = rows - 1; // row indexes start from 0, so last index is rows - 1
+    let spaces = i;
+    for (let j = 0; j < spaces; j++) {
+        row += ' ';
+    }
+
+    let asterisks = lastRow - (i * 2 + 1);
+    for (let j = 0; j < asterisks; j++) {
+        row += '*';
+    }
+    isoTriangle += row + '\n';
+}
+console.log(isoTriangle);
