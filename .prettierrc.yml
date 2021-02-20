@@ -1,0 +1,4 @@
+# This config replaces double quotes with single quotes
+singleQuote: true
+# This config removes all semicolumns
+# semi: false
