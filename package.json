@@ -1,0 +1,22 @@
+{
+  "name": "inglorious-portfolio",
+  "version": "0.1.0",
+  "description": "Portfolio project created during the Inglorious Academy 2020-2021.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IngloriousCoderz/inglorious-portfolio.git"
+  },
+  "author": "Matteo Antony Mistretta <antony.mistretta@gmail.com> (https://www.ingloriouscoderz.it)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IngloriousCoderz/inglorious-portfolio/issues"
+  },
+  "homepage": "https://github.com/IngloriousCoderz/inglorious-portfolio#readme",
+  "devDependencies": {
+    "eslint": "^7.20.0"
+  }
+}
