@@ -1,8 +1,14 @@
 const obj = {
-  key1: 'value1',
   key2: 'value2',
+  key1: 'value1',
 }; // object literal
 // const obj = new Object(); // constructor
+
+const arrObj = {
+  0: 'value1',
+  1: 'value2',
+  3: 42,
+};
 
 const arr = ['value1', 'value2', 42]; // array literal
 // const arr = new Array(); // constructor

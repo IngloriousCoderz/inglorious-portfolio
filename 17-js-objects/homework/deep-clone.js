@@ -5,6 +5,7 @@ shallowClone(milk);
 const user = {
   name: 'Antony',
   age: 38,
+  nicknames: ['IceOnFire', 'IceUnderFire'],
   body: {
     heads: 1,
     torsos: 1,
@@ -30,6 +31,8 @@ function deepClone(obj) {
   for (let key in obj) {
     if (typeof obj[key] === 'object') {
       clone[key] = deepClone(obj[key]);
+    } else if (Array.isArray(obj[key])) {
+      // ...
     } else {
       clone[key] = obj[key];
     }
