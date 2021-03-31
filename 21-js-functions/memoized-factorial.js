@@ -4,17 +4,20 @@
  * 6! = 6 * 5! = 6 * cached(5!)
  */
 
-const memoizedFactorial = memoize(factorial);
+const memoizedFactorial = memoize((num) =>
+  num === 1 ? num : num * memoizedFactorial(num - 1)
+);
 
 console.log(memoizedFactorial(5));
 console.log(memoizedFactorial(6));
 
 function memoize(func) {
-  let cache = {};
+  const cache = {};
 
   return function (num) {
     let result = cache[num];
     if (result != null) {
+      console.log(cache, num, result);
       return result;
     }
 
