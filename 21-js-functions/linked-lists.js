@@ -13,7 +13,7 @@ let obj4 = { value: 4 };
 function remove(obj, list) {
   obj.next = null;
   // how do I get a reference to the previous
-  // element os I can change its reference?
+  // element so I can change its reference?
 }
 
 let list = obj1;
