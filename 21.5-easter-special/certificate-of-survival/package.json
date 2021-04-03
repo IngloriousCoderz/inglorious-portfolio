@@ -1,0 +1,14 @@
+{
+  "name": "certificate-of-survival",
+  "version": "1.0.0",
+  "description": "A digitally signed certificate that students can brag about after the academy is over.",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass styles/style.scss styles/style.css"
+  },
+  "author": "Matteo Antony Mistretta <antony.mistretta@gmail.com> (https://www.ingloriouscoderz.it)",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}
