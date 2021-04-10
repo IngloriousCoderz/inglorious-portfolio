@@ -12,11 +12,11 @@ const toHtml = (tag) => (str) => `<${tag}>${str}</${tag}>`;
 
 // console.log(
 //   toHtml(
-//     // addExclamation(
+//     addExclamation(
 //       shout(
 //         'hello world'
 //       )
-//     // )
+//     )
 //   )
 // );
 

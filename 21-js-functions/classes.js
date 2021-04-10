@@ -52,3 +52,35 @@ class Woman extends Person {
 }
 
 const sao = new Woman('Sao', 32);
+
+class Mario {
+  #health = 1;
+  #height = 1;
+
+  jump() {
+    console.log('jumping');
+  }
+
+  run() {
+    console.log('running');
+  }
+}
+
+class SuperMario extends Mario {
+  health = 2;
+  height = 2;
+}
+
+class FireballMario extends SuperMario {
+  run() {
+    console.log('shooting and running');
+  }
+}
+
+class CapeMario extends SuperMario {
+  jump() {
+    console.log('gliding');
+  }
+}
+
+class UltraMario extends FireballMario {}
